@@ -1,0 +1,22 @@
+<jboss umlns="urn:jboss:1.0">
+    <shared-session-config xmlns="urn:jboss:shared-session-config:1.0">
+        <max-active-sessions>10</max-active-sessions>
+        <session-config>
+            <session-timeout>0</session-timeout>
+            <cookie-config>
+                <name>JSESSIONID</name>
+                <domain>domainName</domain>
+                <path>/cookiePath</path>
+                <comment>cookie comment</comment>
+                <http-only>true</http-only>
+                <secure>true</secure>
+                <max-age>-1</max-age>
+            </cookie-config>
+            <tracking-mode>COOKIE</tracking-mode>
+        </session-config>
+        <replication-config>
+            <cache-name>web</cache-name>
+            <replication-granularity>SESSION</replication-granularity>
+        </replication-config>
+    </shared-session-config>
+</jboss>

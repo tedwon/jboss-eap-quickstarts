@@ -59,7 +59,7 @@
         <version.spring.framework>4.3.7.RELEASE</version.spring.framework>
         <!-- EAP component version management BOM -->
         <version.server.bom>7.1.0.Beta1</version.server.bom>
-        
+
         <version.jboss.spec.javaee.7.0>1.1.0.Final-redhat-1</version.jboss.spec.javaee.7.0>
 
         <version.jaxws-tools-maven-plugin>1.2.0.Final</version.jaxws-tools-maven-plugin>
@@ -86,7 +86,7 @@
                 <version>2.5.0.redhat-2</version>
                 <scope>compile</scope>
             </dependency>
-     
+
             <dependency>
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
@@ -465,6 +465,7 @@
                 <module>websocket-hello</module>
                 <module>xml-dom4j</module>
                 <module>xml-jaxp</module>
+                <module>session-sharing-ear</module>
             </modules>
         </profile>
         <profile>
@@ -545,7 +546,7 @@
                 <module>spring-petclinic/functional-tests</module>
             </modules>
         </profile>
-      
+
         <profile>
             <!-- An optional Arquillian testing profile that executes tests in your JBoss EAP instance.
                  This profile will start a new JBoss EAP instance, and execute the test, shutting it down when done.
